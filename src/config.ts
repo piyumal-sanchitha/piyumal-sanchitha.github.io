@@ -18,7 +18,7 @@ interface IConfig {
 export const Config: IConfig = {
   me: {
     name: "Piyumal Sanchitha",
-    job: "freelancer mechatronics engineer",
+    job: "freelance mechatronics engineer",
     started: "2020-11-01",
     hobby: "machine design and R&D",
   },
