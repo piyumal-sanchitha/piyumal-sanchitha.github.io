@@ -1,5 +1,3 @@
-import icon from "../src/assets/icon.png";
-
 interface IConfig {
   me: {
     name: string;
@@ -29,6 +27,6 @@ export const Config: IConfig = {
     linkedin: "https://www.linkedin.com/in/piyumalsanchitha/",
   },
   og: {
-    image: icon.src,
+    image: "https://raw.githubusercontent.com/piyumal-sanchitha/piyumal-sanchitha.github.io/main/src/assets/me.jpeg",
   },
 };
