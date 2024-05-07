@@ -5,7 +5,6 @@ interface IConfig {
     name: string;
     job: string;
     started: string;
-    stack: string;
     hobby: string;
   };
   socials: {
@@ -19,9 +18,8 @@ interface IConfig {
 export const Config: IConfig = {
   me: {
     name: "Piyumal Sanchitha",
-    job: "freelancer mechatronic engineer",
+    job: "freelancer mechatronics engineer",
     started: "2020-11-01",
-    stack: "C",
     hobby: "machine design and R&D",
   },
   socials: {
