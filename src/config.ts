@@ -28,6 +28,7 @@ export const Config: IConfig = {
     facebook: "https://www.facebook.com/piyumal.sanchitha/",
     github: "https://github.com/piyumal-sanchitha",
     grabcad: "https://grabcad.com/piyumal.sanchitha-1",
+    linkedin: "https://www.linkedin.com/in/piyumalsanchitha/",
   },
   og: {
     image: icon.src,
