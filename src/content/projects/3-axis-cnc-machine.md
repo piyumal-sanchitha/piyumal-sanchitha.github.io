@@ -10,4 +10,4 @@ Hello I'm CNC machine.
 
 Thanks for supporting.
 
-GitHub: [https://github.com/piyumal-sanchitha/Bag-cutting-machine-clutch-break-controller](https://github.com/piyumal-sanchitha/Bag-cutting-machine-clutch-break-controller)
+GrabCAD: [https://grabcad.com/library/cnc-machine-17](https://grabcad.com/library/cnc-machine-17)
