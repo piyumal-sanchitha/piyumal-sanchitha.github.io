@@ -12,7 +12,7 @@ const years = () => {
 };
 
 import { getCollection } from "astro:content";
-const posts = (await getCollection("posts")).sort(function (
+const projects = (await getCollection("projects")).sort(function (
   first: any,
   second: any
 ) {
@@ -75,56 +75,26 @@ const posts = (await getCollection("posts")).sort(function (
 
       <article class="flex flex-col gap-8">
         <header class="flex w-full flex-row justify-between gap-2">
-          <h3 class="text-lg">Featured projects</h3>
+          <h3 class="text-lg">Latest projects</h3>
           <a
-            href={Config.me.projectLink}
+            href="/projects"
             class="text-sm text-primary underline decoration-dashed underline-offset-8"
-            target="_self"
             rel="noreferrer"
             >See all projects
           </a>
         </header>
-        <section
-          class="grid grid-cols-1 gap-4 sm:grid-cols-2 justify-center items-stretch"
-        >
-          {
-            Object.keys(Config.projects).map((project) => (
-              <FloatingBox
-                title={project}
-                href={
-                  Config.projects[project as keyof typeof Config.projects].url
-                }
-                tags={
-                  Config.projects[project as keyof typeof Config.projects].tags
-                }
-              />
-            ))
-          }
-        </section>
-      </article>
-
-      <article class="flex flex-col gap-8">
-        <header class="flex w-full flex-row justify-between gap-2">
-          <h3 class="text-lg">Latest posts</h3>
-          <a
-            href="/posts"
-            class="text-sm text-primary underline decoration-dashed underline-offset-8"
-            rel="noreferrer"
-            >See all posts
-          </a>
-        </header>
         <section class="grid grid-cols-1 gap-4 sm:grid-cols-2 mx-auto">
           {
-            posts.map((post: any) => (
+            projects.map((project: any) => (
               <FloatingBox
-                title={post.data.title}
-                publishedAt={post.data.publishedAt.toLocaleDateString("en-us", {
+                title={project.data.title}
+                publishedAt={project.data.publishedAt.toLocaleDateString("en-us", {
                   year: "numeric",
                   month: "short",
                   day: "numeric",
                 })}
-                description={post.data.description}
-                href={"/posts/" + post.slug}
+                description={project.data.description}
+                href={"/projects/" + project.slug}
               />
             ))
           }
