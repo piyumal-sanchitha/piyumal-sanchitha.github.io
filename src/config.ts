@@ -18,15 +18,15 @@ interface IConfig {
 
 export const Config: IConfig = {
   me: {
-    name: "John Doe",
-    job: "backend engineer",
-    started: "1970-01-01",
-    stack: "Scratch",
-    hobby: "gamble my life savings",
+    name: "Piyumal Sanchitha",
+    job: "freelancer mechatronic engineer",
+    started: "2020-11-01",
+    stack: "C",
+    hobby: "machine design and R&D",
   },
   socials: {
-    twitter: "https://twitter.com/JohnDoe",
-    github: "https://github.com/JohnDoe",
+    facebook: "https://www.facebook.com/piyumal.sanchitha/",
+    github: "https://github.com/piyumal-sanchitha",
   },
   og: {
     image: icon.src,
