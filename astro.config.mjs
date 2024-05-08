@@ -5,4 +5,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   prefetch: true,
   integrations: [tailwind()],
+  site: "https://piyumal.com",
 });
